@@ -27,7 +27,6 @@ userRouter.post(
     return res.status(err.statusCode || 500).json({ error: err.message });
   },
   (req, res) =>{
-    console.log('-->req',req)
 		return res.json({ user: req.user, token: req.authInfo})
 } 
 );

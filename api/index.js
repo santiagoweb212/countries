@@ -19,5 +19,6 @@ const main = async () => {
     console.error("Unable to connect to the database:", error);
   }
 };
+
 modelsRequest();
 main();
